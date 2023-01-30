@@ -1,0 +1,68 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    background-color: #12181B;
+}
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    max-width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#clock{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#clock #hour, #clock #min ,#clock #second{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12vw;
+    background-image: linear-gradient(180deg,
+        rgb(163, 10, 10) 0%,
+        rgb(180, 85, 85) 50%,
+        rgb(232, 232, 232) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  
+}
+#clock #hour{
+    margin-right:25px ;
+}
+
+.controls {
+    margin-top: 16px;
+}
+
+.button {
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.set-alarm {
+    background-color: #033791;
+}
+
+.clear-alarm {
+    background-color: #510212;
+}
+
+.set-alarm:hover ,.clear-alarm:hover {
+    transform: scale(1.2);
+}
