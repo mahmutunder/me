@@ -27,7 +27,8 @@ label.logo{
 }
 label.logo img{
     width: 100px;
-    margin: 15px 0;
+    margin: 15px 0px;
+   
   
 }
 
@@ -150,6 +151,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow:  3px 3px 3px 3 red;
 
  }
 
@@ -175,9 +177,38 @@ animation: 10s anim infinite alternate;
     0%{
         transform: scale(0,0);
     }
-    100%{
+    50%{
         transform: scale(1,1);
+       
+    }
+    90%{
+        transform: scale(1,1);
+       
+    }
+    100%{
+        transform: scale(0,0) rotate(360deg);
     }
 }
 
+.letter{
+    text-shadow: 3px 3px 10px wheat;
+    animation: 10s anim2 infinite alternate;
+}
 
+@keyframes anim2{
+    0%{
+        text-shadow: 3px 3px 10px wheat;
+    }
+    50%{
+        text-shadow: 30px 30px 10px wheat;
+        color:  rgb(210, 180, 123);
+       
+    }
+    90%{
+        text-shadow: -30px -30px 10px rgb(214, 165, 75);
+       
+    }
+    100%{
+        text-shadow: 3px 3px 10px rgb(225, 151, 13);
+    }
+}
