@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target</title>
+    <style>
+    
+        #obj{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border: none;
+            background-image: url("target.jpg");
+            background-position: center;
+            background-size: cover;
+            
+
+
+        }
+        #demo{
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="demo">Try to Click on the target!</p>
+    <button type="button" id="obj"></button>
+
+
+    <script>
+        var counter=0, obj, xpos, ypos;
+        var demo=document.getElementById("demo");
+        obj=document.getElementById("obj");
+
+        obj.onmouseover=function(){
+            counter++;
+
+            xpos=parseInt(Math.random()*1000);
+            ypos=parseInt(Math.random()*600);
+
+           obj.style.left=xpos+"px";
+           obj.style.top=ypos+"px";
+
+           obj.style.width=this.clientWidth + 10 + "px";
+           obj.style.height=this.clientHeight + 10 + "px";
+           demo.innerHTML=counter;
+
+        }
+
+        obj.onclick=function(){
+            alert("You made " + counter + " attempts to catch i!");
+            counter=0;
+            obj.style.height="110px";
+            obj.style.width="110px";
+           
+           
+        }
+       
+
+    </script>
+</body>
+</html>
