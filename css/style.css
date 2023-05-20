@@ -12,13 +12,13 @@ body{
 }
 
 nav{
-    background-color: #0e0e0e;
-    height: 80px;
+    background-color: transparent;
+    height: 20px;
     width: 100%;
     
 }
 label.logo{
-    color: aliceblue;
+ 
 
     padding: 0 100px;
     font-weight: bold;
@@ -80,6 +80,7 @@ nav ul li  a{
         font-size: 16px;
 
     }
+   
 }
 
 @media (max-width:858px) {
@@ -135,20 +136,8 @@ nav ul li  a{
      
   
 
-}
-section{
-   
-    height: calc(100vh - 80px);
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  
-    width: 100%;
-
-
- }
+        }
+    
 
  .container{
    
@@ -170,12 +159,6 @@ animation: 10s anim infinite alternate;
  }
 
 
- .vid{
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    object-fit:cover;
-}
 
 
 @keyframes anim{
@@ -216,4 +199,92 @@ animation: 10s anim infinite alternate;
     100%{
         text-shadow: 3px 3px 10px rgb(225, 151, 13);
     }
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(rgba(65, 231, 32, 0.5),rgba(24, 32, 35, 0.5)),url(/images/homeback.jpg);
+  
+  background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+
+}
+
+
+
+
+
+
+.inside{
+    height: 100Vh;
+    padding: 60px 8%;
+    color: aliceblue;
+
+     
+
+}
+
+
+
+p.slide-left{
+animation-delay: 1s;
+}
+.links.slide-left{
+    animation-delay: 2s;
+}
+
+
+.inside h1{
+    font-size: 100px !important;
+   
+
+}
+.inside p{
+    width: 40%;
+    font-size: 20px;
+    line-height: 2;
+    opacity: 0;
+
+}
+
+.links{
+    margin-top: 30px;
+    opacity: 0;
+    
+
+    
+}
+.links a{
+    color: aliceblue;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+.links .btn{
+  border: 2px solid wheat;
+  padding: 10px;
+  border-radius: 30px;
+}
+.slide-left{
+    animation: slideleft 1s linear forwards;
+
+}
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+
+}
+.logo.slide-left{
+opacity: 0;
+animation-delay: 3s;
 }
