@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="Icon" href="images/logo-top.png">
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(5, 75, 215, 0.6);
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 300px;
+        height: 440px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 15px;
+        font-family: monospace;
+        background-color: rgba(49, 155, 162, 0.6);
+        border-radius: 0 25px;
+        box-shadow: 0 0 20px black;
+      }
+      .intro-text p {
+        margin: 5px 0;
+        font-size: 13px;
+      }
+      .intro-text p a {
+        color: #121212;
+      }
+      form {
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      h2{
+        color: #fff;
+      }
+      form input {
+        padding: 12px 7px;
+        outline: none;
+        border: 1px solid #8c8f94;
+        font-family: monospace;
+      }
+      form input:focus {
+        border-color: #16056b;
+      }
+      .check-box {
+        display: flex;
+      }
+      .check-box label {
+        font-size: 10px;
+        padding: 0 5px;
+      }
+      form button {
+        border: none;
+        outline: none;
+        padding: 11px 0;
+        background: #16056b;
+        color: #fff;
+        font-size: 18px;
+        box-shadow: 0 7px 15px rgba(0, 0, 0, 0.8);
+        font-family: monospace;
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: #16056b;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro-text">
+        <h2>Create Account</h2>
+        
+        <p>Already have an account? <a href="#">Login</a></p>
+      </div>
+      <form>
+        <input type="text" name="fullname" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <div class="check-box">
+          <input type="checkbox" id="check" />
+          <label for="check"
+            >I have read and agree the <a href="#">Term & privacy</a></label
+          >
+        </div>
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+  </body>
+</html>
