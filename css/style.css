@@ -204,9 +204,8 @@ animation: 10s anim infinite alternate;
 .header{
     width: 100%;
     height: 100vh;
-    /*background-image: radial-gradient(rgba(65, 231, 32, 0.5),rgba(24, 32, 35, 0.5)),url(/homeback.jpg);*/
-
-    background-image: url(/homeback.jpg);
+   
+background-image: url(/images/funny.jpg);
   background-position: center;
     background-size: cover;
     overflow: hidden;
