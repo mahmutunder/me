@@ -22,7 +22,8 @@
     transition: .3s;
     background-color: aliceblue;
     padding: 5px 20px;
-
+    border-left: 4px solid rgb(177, 7, 177);
+    border-right: 4px solid rgb(177, 7, 177);
 }
 .btn:hover{
     background-color: rgb(18, 3, 3);
@@ -70,10 +71,27 @@ font-size: 30px;
    margin-top: 20px;
    border-radius: 15px 0;
    color: aliceblue;
+   display: flex;
+   flex-direction: column;
 
 
 }
 
 .card:nth-child(even){
     background-color: rgb(155, 39, 38);
+}
+
+.top-in-card{
+width: 100%;
+height: 50%;
+margin: 20px 0 0 0;
+}
+
+.text-in-card{
+    width: 100%;
+    height: 50%;
+    background: white;
+    color: rgb(0, 0, 0);
+    border-bottom: 4px solid rgb(222, 47, 222);
+   
 }
