@@ -73,3 +73,7 @@ font-size: 30px;
 
 
 }
+
+.card:nth-child(even){
+    background-color: rgb(155, 39, 38);
+}
