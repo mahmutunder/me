@@ -43,6 +43,7 @@
     text-decoration: none;
     color: whitesmoke;
     text-align: center;
+    font-size: 20px;
 }
 .topvar a:hover {
     background-color: whitesmoke;
@@ -62,10 +63,12 @@
     background-color: #f1f1f1;
     padding: 20px;
 }
-.fakeimg {
-    background-color: #aaa;
+.block {
+    background-color: #185a02;
     width: 100%;
     padding: 20px;
+    font-size: 15px;
+    color: #f5f4f7;
 }
 .footer {
     background-color: #080808;
@@ -76,9 +79,13 @@
 .footer h2{
     color: wheat;
 }
+
+
+
 @media screen and (max-width: 750px) {
     .row,
     .topvar {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
+   
 }

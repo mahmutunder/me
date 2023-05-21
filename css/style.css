@@ -15,6 +15,7 @@ nav{
     background-color: transparent;
     height: 20px;
     width: 100%;
+    font-size: 30px;
     
 }
 label.logo{
@@ -130,11 +131,14 @@ nav ul li  a{
          transform: scale(1,1) !important;
          z-index: -1;
        
+       
          }
-        
-        
+       
+         .inside p{
+            font-size: 15px !important;
+            width: 340px !important;
      
-  
+         }
 
         }
     
@@ -161,45 +165,8 @@ animation: 10s anim infinite alternate;
 
 
 
-@keyframes anim{
-    0%{
-        transform: scale(0,0);
-    }
-    50%{
-        transform: scale(1,1);
-       
-    }
-    90%{
-        transform: scale(1,1);
-       
-    }
-    100%{
-        transform: scale(0,0) rotate(360deg);
-    }
-}
 
-.letter{
-    text-shadow: 3px 3px 10px wheat;
-    animation: 10s anim2 infinite alternate;
-}
 
-@keyframes anim2{
-    0%{
-        text-shadow: 3px 3px 10px wheat;
-    }
-    50%{
-        text-shadow: 30px 30px 10px wheat;
-        color:  rgb(210, 180, 123);
-       
-    }
-    90%{
-        text-shadow: -30px -30px 10px rgb(214, 165, 75);
-       
-    }
-    100%{
-        text-shadow: 3px 3px 10px rgb(225, 151, 13);
-    }
-}
 
 .header{
     width: 100%;
@@ -223,6 +190,7 @@ animation: 10s anim infinite alternate;
     height: 100Vh;
     padding: 60px 8%;
     color: aliceblue;
+    
 
      
 
@@ -244,10 +212,11 @@ animation-delay: 1s;
 
 }
 .inside p{
-    width: 40%;
+    width: 600px;
     font-size: 20px;
     line-height: 2;
     opacity: 0;
+    
 
 }
 
