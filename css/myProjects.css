@@ -105,3 +105,35 @@ margin: 20px 0 0 0;
 .java:nth-child(even){
     background-color: rgb(234, 160, 23) !important;
 }
+
+.title{
+    margin-top: 80px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    line-height: 2;
+  
+}
+.g{
+    background-color: rgb(5, 139, 38);
+    padding: 5px;
+    
+}
+
+.r{
+    background-color: rgb(155, 39, 38);
+    padding: 5px;
+    
+}
+
+.b{
+    background-color:rgb(23, 132, 215);
+    padding: 5px;
+    
+}
+
+.y{
+    background-color:  rgb(234, 160, 23);
+    padding: 5px;
+    
+}
